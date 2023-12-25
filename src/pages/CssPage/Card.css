@@ -1,0 +1,12 @@
+.card-external {
+    background-color:white;
+    margin: 10px;
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
