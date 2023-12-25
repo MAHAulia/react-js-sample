@@ -1,4 +1,6 @@
 import reactLogo from './assets/react.svg'
+import viteLogo from './assets/vite.svg'
+import bunLogo from './assets/bun.svg'
 import './App.css'
 import Counter from './pages/Counter/Counter'
 
@@ -13,14 +15,17 @@ function App() {
         <a href="material-ui" style={{ marginRight: '10px' }}>Material UI</a>
       </div>
       <div>
+      <a href="https://bun.sh/" target="_blank">
+          <img src={bunLogo} className="logo" alt="bun logo" />
+        </a>
         <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://reactjs.org" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Bun + Vite + React</h1>
       <div className="card">
         <Counter label="Total Konter" />
         <p>
