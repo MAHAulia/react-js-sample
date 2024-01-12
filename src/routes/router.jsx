@@ -27,8 +27,6 @@ const router = createBrowserRouter([
         path: 'material-ui',
         element: <MaterialUiPage />
     }
-], {
-    basename: '/bun-react-js-sample'
-})
+])
 
 export default router
