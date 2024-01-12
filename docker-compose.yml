@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+    ui:
+        container_name: ${CONTAINER_ID_NAME?Variable not set}
+        restart: unless-stopped
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - ${REACT_HTTP_PORT?Variable not set}:4173
+        volumes:
+            - ./:/app
+            - /app/node_modules
+        environment:
+            - REACT_HTTP_PORT=${REACT_HTTP_PORT? Variable not set}
+            - REACT_API_URL=${REACT_API_URL?Variable not set}
+            - NODE_ENV=${NODE_ENV?false}
